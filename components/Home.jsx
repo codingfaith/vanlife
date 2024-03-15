@@ -1,7 +1,7 @@
 import React from "react"
 import Nav from "./Nav"
 
-export default function About(){
+export default function Home(){
     return (
         <div>
             <Nav />

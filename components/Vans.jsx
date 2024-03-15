@@ -5,9 +5,6 @@ export default function Vans(){
     return (
         <div>
             <Nav />
-            <div>
-
-            </div>
         </div>
     )
 }

@@ -5,8 +5,10 @@ export default function Nav(){
     return (
         <div className="navbar">
             <Link to="/">#VANLIFE</Link>
-            <Link to="/about">About</Link>
-            <Link to="/vans">Vans</Link>
+            <div className="navlinks">
+                <Link to="/about">About</Link>
+                <Link to="/vans">Vans</Link>
+            </div>
         </div>
     )
 }

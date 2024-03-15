@@ -3,7 +3,7 @@ import Nav from "./Nav"
 
 export default function Home(){
     return (
-        <div>
+        <div className="container">
             <Nav />
         </div>
     )

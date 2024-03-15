@@ -3,7 +3,7 @@ import Nav from "./Nav"
 
 export default function Vans(){
     return (
-        <div>
+        <div className="container">
             <Nav />
         </div>
     )

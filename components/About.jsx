@@ -1,12 +1,13 @@
 import React from "react"
 import Nav from "./Nav"
 import Footer from "./Footer"
+import aboutbg from "../img/aboutbg.png"
 
 export default function About(){
     return (
         <div className="container">
             <Nav />
-            <img src="./img/aboutbg.png" alt="van image" className="about-image"/>
+            <img src={aboutbg} alt="van image" className="about-image"/>
             <div className="about-body">
                 <h3>Don't squeeze in a sedan when you could relax in a van.</h3><br />
                 <p>Our mission is to enliven your roadtrip with the perfect travel van rental. Our vans are recertified before each

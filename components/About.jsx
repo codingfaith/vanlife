@@ -2,6 +2,7 @@ import React from "react"
 import Nav from "./Nav"
 import Footer from "./Footer"
 import aboutbg from "../img/aboutbg.png"
+import { Link } from "react-router-dom"
 
 export default function About(){
     return (
@@ -17,7 +18,7 @@ export default function About(){
                 <div className="explore">
                     <h4>Your destination is waiting.</h4>
                     <h4>Your van is ready.</h4><br />
-                    <button className="explore-button">Explore our vans</button>
+                    <Link to="/vans" className="explore-button">Explore our vans</Link>
                 </div>
             </div>
             <Footer />

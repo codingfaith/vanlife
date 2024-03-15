@@ -7,11 +7,11 @@
     background-image: url("../img/homebg.png");
 }
 .homepage-button {
-    width: 100%;
-    border: none;
-    outline: none;
     padding: 0.5em;
     color: white;
     font-family: inherit;
     background: #FF8C38;
+}
+.homepage-body a {
+    text-decoration: none;
 }

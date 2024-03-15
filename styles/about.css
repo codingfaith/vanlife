@@ -8,12 +8,13 @@
 .explore {
     margin-bottom: 1em;
     border-radius: 5px;
-    background: #FFCC8D;
-    
+    background: #FFCC8D;   
 }
+.explore a {
+    text-decoration: none;
+}
+
 .explore-button {
-    border: none;
-    outline: none;
     padding: 0.5em;
     color: white;
     border-radius: 5px;

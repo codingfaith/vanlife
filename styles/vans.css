@@ -1,0 +1,50 @@
+.vansCont {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.van {
+    width: 46%;
+}
+.vanImg {
+    width: 100%;
+    display: block;
+    margin-top: 20px;
+}
+.vans-body {
+    padding: 1em;
+}
+.vansFilters {
+    gap: 0.5em;
+    display: flex;
+    font-size: small;
+    margin: 10px auto;
+    justify-content: space-between;
+}
+.van-type {
+    padding: 5px;
+    border: none;
+    outline: none;
+    font-size: small;
+    font-family: inherit;
+    background: #FFEAD0;
+}
+.clear {
+    align-self: center;
+    border-bottom: 1px solid black;
+}
+.label {
+    display: flex;
+    font-size: small;
+    font-weight: bold;
+    justify-content: space-between;
+}
+.pay {
+    display: block;
+    font-size: 12px;
+    text-align: right;
+}
+.type {
+    color: white;
+    border-radius: 5px;
+}

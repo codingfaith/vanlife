@@ -1,5 +1,6 @@
 import React from "react"
 import Nav from "./Nav"
+import Footer from "./Footer"
 import "../server"
 
 export default function Vans(){
@@ -31,7 +32,8 @@ export default function Vans(){
                 <div className="vansCont">
                     { vanElements }
                 </div>
-            </div>  
+            </div>
+            <Footer/>  
         </div>
     )
 }

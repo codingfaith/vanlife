@@ -7,8 +7,10 @@
     background-image: url("../img/homebg.png");
 }
 .homepage-button {
+    display: block;
     padding: 0.5em;
     color: white;
+    text-align: center;
     font-family: inherit;
     background: #FF8C38;
 }

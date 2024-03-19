@@ -6,6 +6,10 @@
 .van {
     width: 46%;
 }
+.van a {
+    color: black;
+    text-decoration: none;
+}
 .vanImg {
     width: 100%;
     display: block;

@@ -2,6 +2,7 @@ import React from "react"
 import Nav from "./Nav"
 import Footer from "./Footer"
 import "../server"
+import { Link } from "react-router-dom"
 
 export default function Vans(){
     const [vans, setVans] = React.useState([])
@@ -13,10 +14,15 @@ export default function Vans(){
   
     const vanElements = vans.map(van=>
         <div key={van.id} className="van">
-            <img src={van.imageUrl} alt={`van ${van.id}`} className="vanImg"/>
-            <p className="label"><span>{van.name}</span><span>${van.price}</span></p>
-            <span className="pay">/day</span>
-            <span className="van-type type" style={{background:van.type === "simple" ? "#E17654" : (van.type === "rugged" ? "#115E59" : "#161616") }}>{van.type}</span>
+            <Link 
+                to={`/vans/${van.id}`}
+                aria-label={`View details for ${van.name}, priced at $${van.price} per day`}
+            >
+                <img src={van.imageUrl} alt={`van ${van.id}`} className="vanImg"/>
+                <p className="label"><span>{van.name}</span><span>${van.price}</span></p>
+                <span className="pay">/day</span>
+                <span className="van-type type" style={{background:van.type === "simple" ? "#E17654" : (van.type === "rugged" ? "#115E59" : "#161616") }}>{van.type}</span>
+            </Link>
         </div>)
     return (
         <div className="container">

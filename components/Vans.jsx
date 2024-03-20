@@ -18,10 +18,10 @@ export default function Vans(){
                 to={`/vans/${van.id}`}
                 aria-label={`View details for ${van.name}, priced at $${van.price} per day`}
             >
-                <img src={van.imageUrl} alt={`van ${van.id}`} className="vanImg"/>
+                <img src={van.imageUrl} alt={`${van.name} van`} className="vanImg"/>
                 <p className="label"><span>{van.name}</span><span>${van.price}</span></p>
                 <span className="pay">/day</span>
-                <span className="van-type type" style={{background:van.type === "simple" ? "#E17654" : (van.type === "rugged" ? "#115E59" : "#161616") }}>{van.type}</span>
+                <span className={`van-type type ${van.type}`}>{van.type}</span>
             </Link>
         </div>)
     return (

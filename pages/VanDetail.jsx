@@ -1,5 +1,5 @@
 import React from "react"
-import Nav from "./Nav"
+import Nav from "./Header"
 import Footer from "./Footer"
 import { Link } from "react-router-dom"
 import { useParams } from "react-router-dom"
@@ -13,8 +13,7 @@ export default function VanDetail(){
         .then(data => setVan(data.vans))
     },[params])
     return  (
-        <div className="container">
-            <Nav />
+        <>
             {van ? 
             (<div className="van-body">
                 <Link to="/vans" className="back">← Back to all vans</Link>
@@ -25,7 +24,6 @@ export default function VanDetail(){
                 <p>{van.description}</p><br />
                 <button className="rent-button">Rent this van</button>
             </div>): <h3>Loading...</h3>}
-            <Footer />
-        </div>
+        </>
     )
 }

@@ -1,13 +1,12 @@
 import React from "react"
-import Nav from "./Nav"
+import Nav from "./Header"
 import Footer from "./Footer"
 import aboutbg from "../img/aboutbg.png"
 import { Link } from "react-router-dom"
 
 export default function About(){
     return (
-        <div className="container">
-            <Nav />
+        <>
             <img src={aboutbg} alt="van image" className="about-image"/>
             <div className="about-body">
                 <h3>Don't squeeze in a sedan when you could relax in a van.</h3><br />
@@ -21,7 +20,6 @@ export default function About(){
                     <Link to="/vans" className="explore-button">Explore our vans</Link>
                 </div>
             </div>
-            <Footer />
-        </div>
+        </>
     )
 }

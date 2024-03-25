@@ -1,5 +1,5 @@
 import React from "react"
-import Nav from "./Nav"
+import Nav from "./Header"
 import Footer from "./Footer"
 import "../server"
 import { Link } from "react-router-dom"
@@ -25,21 +25,17 @@ export default function Vans(){
             </Link>
         </div>)
     return (
-        <div className="container">
-            <Nav />
-            <div className="vans-body">
-                <h3>Explore our van options</h3>
-                <div className="vansFilters">
-                    <button className="van-type">Simple</button>
-                    <button className="van-type">Luxury</button>
-                    <button className="van-type">Rugged</button>
-                    <span className="clear">Clear filters</span>
-                </div>
-                <div className="vansCont">
-                    { vanElements }
-                </div>
+        <div className="vans-body">
+            <h3>Explore our van options</h3>
+            <div className="vansFilters">
+                <button className="van-type">Simple</button>
+                <button className="van-type">Luxury</button>
+                <button className="van-type">Rugged</button>
+                <span className="clear">Clear filters</span>
             </div>
-            <Footer/>  
+            <div className="vansCont">
+                { vanElements }
+            </div>
         </div>
     )
 }

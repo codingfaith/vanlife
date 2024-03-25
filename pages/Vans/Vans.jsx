@@ -1,7 +1,7 @@
 import React from "react"
-import Nav from "./Header"
-import Footer from "./Footer"
-import "../server"
+import Nav from "../Nav/Header"
+import Footer from "../Nav/Footer"
+import "../../server"
 import { Link } from "react-router-dom"
 
 export default function Vans(){

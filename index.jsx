@@ -1,10 +1,10 @@
 import React from "react"
 import Home from "./pages/Home"
-import Vans from "./pages/Vans"
 import About from "./pages/About"
+import Vans from "./pages/Vans/Vans"
 import ReactDom from "react-dom/client"
-import VanDetail from "./pages/VanDetail"
 import Layout from "./components/Layout"
+import VanDetail from "./pages/Vans/VanDetail"
 import { BrowserRouter, Routes, Route } from "react-router-dom"
 
 function App(){

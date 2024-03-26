@@ -2,8 +2,11 @@ import React from "react"
 import Home from "./pages/Home"
 import About from "./pages/About"
 import Vans from "./pages/Vans/Vans"
+import Host from "./pages/Host/Host"
 import ReactDom from "react-dom/client"
+import Income from "./pages/Host/Income"
 import Layout from "./components/Layout"
+import Reviews from "./pages/Host/Reviews"
 import VanDetail from "./pages/Vans/VanDetail"
 import { BrowserRouter, Routes, Route } from "react-router-dom"
 
@@ -12,10 +15,13 @@ function App(){
         <BrowserRouter>
             <Routes>
                 <Route element={<Layout/>}>
-                <Route path="/" element={<Home />} />
-                <Route path="/about" element={<About />} />
-                <Route path="/vans" element={<Vans />} />
-                <Route path="/vans/:id" element={<VanDetail />} />
+                    <Route path="/" element={<Home />} />
+                    <Route path="/vans" element={<Vans />} />
+                    <Route path="/host" element={<Host />} />
+                    <Route path="/about" element={<About />} />
+                    <Route path="/vans/:id" element={<VanDetail />} />
+                    <Route path="/host/income" element={<Income />} />
+                    <Route path="/host/reviews" element={<Reviews />} />  
                 </Route>
             </Routes>
         </BrowserRouter>

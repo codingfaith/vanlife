@@ -2,7 +2,7 @@ import React from "react"
 import Home from "./pages/Home"
 import About from "./pages/About"
 import Vans from "./pages/Vans/Vans"
-import Host from "./pages/Host/Host"
+import Host from "./pages/Host/Dashboard"
 import ReactDom from "react-dom/client"
 import Income from "./pages/Host/Income"
 import Layout from "./components/Layout"
@@ -17,8 +17,8 @@ function App(){
                 <Route element={<Layout/>}>
                     <Route path="/" element={<Home />} />
                     <Route path="/vans" element={<Vans />} />
-                    <Route path="/host" element={<Host />} />
                     <Route path="/about" element={<About />} />
+                    <Route path="/host" element={<Dashboard />} />
                     <Route path="/vans/:id" element={<VanDetail />} />
                     <Route path="/host/income" element={<Income />} />
                     <Route path="/host/reviews" element={<Reviews />} />  

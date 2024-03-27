@@ -1,5 +1,6 @@
 .host-nav {
     display: flex;
+    margin-block: 1em;
     justify-content: space-around;
 }
 .host-nav a {
@@ -8,4 +9,7 @@
 }
 .host-nav a:hover {
     color: #FF8C38;
+}
+.hostVan-body {
+    padding: 1em;
 }

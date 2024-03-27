@@ -1,6 +1,4 @@
 import React from "react"
-import Nav from "../Nav/Header"
-import Footer from "../Nav/Footer"
 import { Link } from "react-router-dom"
 import { useParams } from "react-router-dom"
 

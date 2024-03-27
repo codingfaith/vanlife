@@ -30,10 +30,6 @@ body {
 .navlinks a:hover {
     color: #FF8C38;
 }
-.navlinks a:focus,
-.navlinks a:active {
-    border-bottom: 1px solid black;
-}
 .logo {
     font-weight: bold;
 }

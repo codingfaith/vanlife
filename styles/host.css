@@ -13,3 +13,21 @@
 .hostVan-body {
     padding: 1em;
 }
+.thumbnail {
+    width: 70px;
+    border-radius: 5px;
+}
+.host-van {
+    gap: 1em;
+    padding: 0.5em;
+    display: flex;
+    border-radius: 5px;
+    margin-block: 0.5em;
+    background: #ffffff; 
+}
+.host-van-text {
+    align-self: center;
+}
+.price {
+    font-size: small;
+}

@@ -1,6 +1,6 @@
 import React from "react"
-export default function(){
+export default function Dashboard(){
     return (
-        <h3>This is the host page</h3>
+        <h3>This is the host dashboard page</h3>
     )
 }

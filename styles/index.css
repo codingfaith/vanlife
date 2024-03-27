@@ -38,9 +38,10 @@ body {
     font-weight: bold;
 }
 .footer {
-    padding: 1em 0.5em;
     font-size: small;
     color: #AAAAAA;
     text-align: center;
+    padding: 1em 0.5em;
     background: #252525;
+    
 }

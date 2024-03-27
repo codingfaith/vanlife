@@ -1,0 +1,11 @@
+.host-nav {
+    display: flex;
+    justify-content: space-around;
+}
+.host-nav a {
+    color: black;
+    text-decoration: none;
+}
+.host-nav a:hover {
+    color: #FF8C38;
+}

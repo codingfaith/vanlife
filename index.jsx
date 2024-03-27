@@ -2,26 +2,31 @@ import React from "react"
 import Home from "./pages/Home"
 import About from "./pages/About"
 import Vans from "./pages/Vans/Vans"
-import Host from "./pages/Host/Dashboard"
 import ReactDom from "react-dom/client"
 import Income from "./pages/Host/Income"
 import Layout from "./components/Layout"
 import Reviews from "./pages/Host/Reviews"
+import HostVans from "./pages/Host/HostVans"
+import Dashboard from "./pages/Host/Dashboard"
 import VanDetail from "./pages/Vans/VanDetail"
+import HostLayout from "./components/HostLayout"
 import { BrowserRouter, Routes, Route } from "react-router-dom"
 
 function App(){
     return (
         <BrowserRouter>
             <Routes>
-                <Route element={<Layout/>}>
-                    <Route path="/" element={<Home />} />
+                <Route path="/" element={<Layout/>}>
+                    <Route index element={<Home />} />
                     <Route path="/vans" element={<Vans />} />
                     <Route path="/about" element={<About />} />
-                    <Route path="/host" element={<Dashboard />} />
                     <Route path="/vans/:id" element={<VanDetail />} />
-                    <Route path="/host/income" element={<Income />} />
-                    <Route path="/host/reviews" element={<Reviews />} />  
+                    <Route path="/host" element={<HostLayout />}>
+                        <Route index element={<Dashboard />} />
+                        <Route path="/host/income" element={<Income />} />
+                        <Route path="/host/vans" element={<HostVans />} />
+                        <Route path="/host/reviews" element={<Reviews />} />  
+                    </Route>
                 </Route>
             </Routes>
         </BrowserRouter>

@@ -9,9 +9,6 @@
     color: black;
     text-decoration: none;
 }
-.host-nav a:hover {
-    color: #FF8C38;
-}
 .hostVan-body {
     padding: 1em;
 }
@@ -40,9 +37,7 @@
     padding: 1em;
     background: white;
 }
-.host-van-body a {
-    border-bottom: 1px solid black;
-}
+
 .flex {
     gap: 1em;
     display: flex;
@@ -50,4 +45,15 @@
 }
 .details {
     align-self: center;
+}
+.details-host-nav {
+    gap: 2em;
+    display: flex;
+    margin-block: 1em;
+}
+.details-host-nav a {
+    text-decoration: none;
+}
+.details-host-nav:hover {
+    color: #FF8C38;
 }

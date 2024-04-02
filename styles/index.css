@@ -1,6 +1,7 @@
 * {
     margin: 0;
     padding: 0;
+    font-size: small;
     box-sizing: border-box;
 }
 body {
@@ -30,14 +31,17 @@ body {
 .navlinks a:hover {
     color: #FF8C38;
 }
-.logo {
-    font-weight: bold;
-}
 .footer {
-    font-size: small;
     color: #AAAAAA;
     text-align: center;
     padding: 1em 0.5em;
     background: #252525;
     
+}
+.bold {
+    font-weight: bold;
+}
+a,
+button {
+    font-size: inherit;
 }

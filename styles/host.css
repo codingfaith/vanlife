@@ -3,7 +3,9 @@
     margin-block: 1em;
     justify-content: space-around;
 }
-.host-nav a {
+.host-nav a,
+.host-van-link,
+.host-van-body a {
     color: black;
     text-decoration: none;
 }
@@ -28,6 +30,24 @@
 .host-van-text {
     align-self: center;
 }
-.price {
-    font-size: small;
+.host-currentVan {
+    width: 100px;
+    display: block;
+    margin-block: 10px;
+}
+.host-van-body {
+    margin: 1em;
+    padding: 1em;
+    background: white;
+}
+.host-van-body a {
+    border-bottom: 1px solid black;
+}
+.flex {
+    gap: 1em;
+    display: flex;
+    margin-top: 1em;
+}
+.details {
+    align-self: center;
 }

@@ -8,7 +8,7 @@ export default function Nav(){
     }
     return (
         <div className="navbar">
-            <Link to="/"className="logo">#VANLIFE</Link>
+            <Link to="/"><h1>#VANLIFE</h1></Link>
             <div className="navlinks">
                 <NavLink 
                     to="/host"

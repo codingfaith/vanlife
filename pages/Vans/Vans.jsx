@@ -1,16 +1,23 @@
 import React from "react"
 import "../../server"
-import { Link } from "react-router-dom"
+import { Link, useSearchParams } from "react-router-dom"
 
 export default function Vans(){
     const [vans, setVans] = React.useState([])
+    const [searchParams,setSearchParams] = useSearchParams()
+    const typeFilter = searchParams.get("type")
+
     React.useEffect(() => {
         fetch("/api/vans")
         .then(res => res.json())
         .then(data => setVans(data.vans))
     },[])
   
-    const vanElements = vans.map(van=>
+    const filteredVans = typeFilter 
+        ? vans.filter(van => van.type.toLowerCase() === typeFilter)
+        : vans
+
+    const vanElements = filteredVans.map(van=>
         <div key={van.id} className="van">
             <Link 
                 to={`/vans/${van.id}`}
@@ -26,10 +33,10 @@ export default function Vans(){
         <div className="vans-body">
             <h3>Explore our van options</h3>
             <div className="vansFilters">
-                <button className="van-type">Simple</button>
-                <button className="van-type">Luxury</button>
-                <button className="van-type">Rugged</button>
-                <span className="clear">Clear filters</span>
+                <Link to="?type=simple" className="van-type simple-type type">Simple</Link>
+                <Link to="?type=luxury" className="van-type luxury-type type">Luxury</Link>
+                <Link to="?type=rugged" className="van-type rugged-type type">Rugged</Link>
+                <Link to="."className="clear">Clear filters</Link>
             </div>
             <div className="vansCont">
                 { vanElements }
@@ -37,3 +44,5 @@ export default function Vans(){
         </div>
     )
 }
+
+{/* <button onClick={()=>{setSearchParams(type:"simple")}}>Simple</button> */}

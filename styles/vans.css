@@ -6,7 +6,8 @@
 .van {
     width: 46%;
 }
-.van a {
+.van a,
+.vansFilters a  {
     color: black;
     text-decoration: none;
 }
@@ -21,7 +22,7 @@
 .vansFilters {
     gap: 0.5em;
     display: flex;
-    margin: 10px auto;
+    margin: 15px auto;
     justify-content: space-between;
 }
 .van-type {
@@ -49,6 +50,6 @@
     color: white;
     border-radius: 5px;
 }
-.simple {background: #E17654;}
-.rugged {background: #115E59;} 
-.luxury {background:#161616}
+.simple, .simple-type:hover {background: #E17654;color: white}
+.rugged, .rugged-type:hover {background: #115E59;color: white} 
+.luxury, .luxury-type:hover {background:#161616;color: white}

@@ -3,6 +3,7 @@ import { Link, NavLink } from "react-router-dom"
 
 export default function Nav(){
     const activeStyles = {
+        color: "#FF8C38",
         fontWeight: "bold",
         textDecoration: "underline"
     }

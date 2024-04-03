@@ -32,6 +32,9 @@
     display: block;
     margin-block: 10px;
 }
+.host-currentVan-img {
+    width: 80px;
+}
 .host-van-body {
     margin: 1em;
     padding: 1em;
@@ -56,4 +59,7 @@
 }
 .details-host-nav:hover {
     color: #FF8C38;
+}
+.photos {
+    flex-wrap: wrap;
 }

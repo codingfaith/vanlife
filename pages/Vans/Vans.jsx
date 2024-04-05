@@ -20,7 +20,11 @@ export default function Vans(){
     const vanElements = filteredVans.map(van=>
         <div key={van.id} className="van">
             <Link 
-                to={`/vans/${van.id}`}
+                to={`${van.id}`}
+                state={{
+                    search: `?${searchParams.toString()}`,
+                    type: typeFilter
+                }}
                 aria-label={`View details for ${van.name}, priced at $${van.price} per day`}
             >
                 <img src={van.imageUrl} alt={`${van.name} van`} className="vanImg"/>
@@ -33,10 +37,17 @@ export default function Vans(){
         <div className="vans-body">
             <h3>Explore our van options</h3>
             <div className="vansFilters">
-                <Link to="?type=simple" className="van-type simple-type type">Simple</Link>
-                <Link to="?type=luxury" className="van-type luxury-type type">Luxury</Link>
-                <Link to="?type=rugged" className="van-type rugged-type type">Rugged</Link>
-                <Link to="."className="clear">Clear filters</Link>
+                <Link
+                    to="?type=simple"
+                    className={`van-type simple-type type ${typeFilter === "simple" ? typeFilter:""}`}>Simple</Link>
+                <Link
+                    to="?type=luxury"
+                    className={`van-type luxury-type type ${typeFilter === "luxury" ? typeFilter:""}`}>Luxury</Link>
+                <Link
+                    to="?type=rugged"
+                    className={`van-type rugged-type type ${typeFilter === "rugged" ? typeFilter:""}`}>Rugged</Link>
+                <Link
+                    to="."className="clear">Clear filters</Link>
             </div>
             <div className="vansCont">
                 { vanElements }

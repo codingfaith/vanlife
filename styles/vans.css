@@ -50,6 +50,18 @@
     color: white;
     border-radius: 5px;
 }
-.simple, .simple-type:hover {background: #E17654;color: white}
-.rugged, .rugged-type:hover {background: #115E59;color: white} 
-.luxury, .luxury-type:hover {background:#161616;color: white}
+.simple,
+.simple-type:hover {
+    background: #E17654;
+    color: white!important;
+}
+.rugged,
+.rugged-type:hover {
+    background: #115E59;
+    color: white!important;
+} 
+.luxury,
+.luxury-type:hover {
+    background:#161616;
+    color: white!important;
+}

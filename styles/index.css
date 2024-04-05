@@ -45,3 +45,21 @@ a,
 button {
     font-size: inherit;
 }
+.not-found {
+    display: block;
+    padding: 0.5em;
+    color: white;
+    margin-block: 1em; 
+    text-align: center;
+    font-family: inherit;
+    background: black; 
+    
+}
+.not-found-body {
+    margin: 1em;
+    padding: 1em;
+    text-align: center;
+}
+.not-found-body a {
+    text-decoration: none;
+}

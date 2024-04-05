@@ -15,7 +15,6 @@ export default function Vans(){
        loadVans()
     },[])
   
-    // console.log(getVans)
     const filteredVans = typeFilter 
         ? vans.filter(van => van.type.toLowerCase() === typeFilter)
         : vans

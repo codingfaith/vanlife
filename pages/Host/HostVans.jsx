@@ -1,14 +1,16 @@
 import React from "react"
-import "../../server"
+import { getVans } from "../../api"
 import { NavLink } from "react-router-dom"
 
 export default function Van(){
     const [vans, setVans] = React.useState([])
     
     React.useEffect(()=>{
-        fetch("/api/vans")
-        .then(res => res.json())
-        .then(data => setVans(data.vans))
+        async function loadVans(){
+            const data = await getVans()
+            setVans(data)
+       }
+       loadVans()
     },[])
 
     const vanElements = vans.map(van =>

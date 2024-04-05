@@ -16,6 +16,7 @@ import HostVanInfo from "./pages/Host/HostVanInfo"
 import HostVanPricing from "./pages/Host/HostVanPricing"
 import HostVanPhotos from "./pages/Host/HostVanPhotos"
 import NotFound from "./pages/Vans/NotFound"
+import "./server"
 
 function App(){
     return (
